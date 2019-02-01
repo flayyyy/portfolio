@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parth Bahuguna | Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin:0px;
+		
+			animation: b 1.5s 1;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease;
+			overflow-x:hidden;
+			display:grid;
+			grid-template-rows: 70px 700px auto;
+			grid-template-areas:"link1 link2 link3"
+								"main main main"
+		}
+		::-webkit-scrollbar {
+		  width: 5px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 20px grey; 
+		  border-radius: 0px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: #18161b; 
+		  border-radius:0px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background:#4A4373; 
+		}
+		.noob{
+			opacity: 0;
+			position:absolute;
+			width:100%;
+			text-align: center;
+			font-family: 'Libre Barcode 128 Text', cursive;
+			font-size: 60px;
+			animation: a 2s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 0.2s;
+			color:#000000;
+		}
+		ul.topbar{
+			opacity:0.6;
+			background-color:black;
+			left:-2000px;
+			position:relative;
+			width:1920px;
+			height:70px;
+			animation: e 2s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 2.0s;
+			grid-template:link1;
+			display:flex;
+			flex-direction:row;
+			z-index:2;
+			top:-16px;
+			justify-content: center;
+		}
+
+
+		.white{
+			background-color:white;
+			left:-2000px;
+			position:absolute;
+			width:1960px;
+			height:700px;
+			top:70px;
+			animation: e 2s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 2.0s;
+			color:#000000;
+			box-shadow: 0px 0px 0px #888888;
+			overflow-y:hidden;
+		}
+		.white1{
+			background-color:white;
+			left:-2000px;
+			position:absolute;
+			width:1960px;
+			height:800px;
+			top:1000px;
+			animation: e 3s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 1.8s;
+			color:#000000;
+			box-shadow: 0px 0px 0px #888888;
+			overflow-y:hidden;
+		}
+		.black{
+			background-color:#151516;
+			overflow-y: hidden;
+			overflow-x: hidden;
+			left:-2000px;
+			width:1960px;
+			position:absolute;
+			top:1700px;
+			height:200px;
+			animation: e 3s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 1.8s;
+			text-align: center;
+			color:white;
+			font-family: 'VT323', monospace;
+
+
+		}
+		.hr1{
+			opacity:0;
+			width:0px;
+			margin-top:400px;
+			animation: c 1.5s 1;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease;
+			animation-delay: 01s;
+		}
+		.triangle{
+	    	height:25px;
+	    	width:25px;
+	    	left:-30px;
+	    	padding-top:20px;
+	    	transform: rotate(90deg);
+	    	opacity:0.7;
+	    	animation: d 1.5s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: cubic-bezier(0, 1, 0.50, 1.00);
+			animation-delay: 2s;
+			position: relative;
+	    }
+	    .image{
+	    	width:1920px;
+	    	height:38px;
+	    	background-color:#000000;
+	    	opacity:0.0;
+	    	transition:0.6s;
+	    	position:relative;
+	    	top:-45px;
+	    }
+	    .image:hover {height: 100px;opacity:0.1}
+	    .image1{
+	    	align-self: center;
+	    	position:static;
+	    	width:1960px;
+	    	height:1080px;
+	    	right: -2000px;
+	    	top:-15px;
+	    	animation: f 1.5s 1;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 1.5s;
+			position:fixed;
+			filter:blur(7px);
+			z-index:-1;
+		}
+		.name{
+			font-family: 'Archivo Black', sans-serif;
+			color:#221433;
+			text-align: center;
+			padding-top: 200px;
+			z-index:1;
+			font-size: 70px;
+		}
+		.flayy{
+			position: relative;
+			padding-top: 100px;
+			left: -300px;
+			width: 500px;
+			height: 500px;
+		}
+		.speech{
+			top:-400px;
+			left: -515px;
+			width:300px;
+			height: 100px;
+			position:relative;
+			opacity:0.8;
+		}
+		.hey{
+			font-family: 'VT323', monospace;
+			opacity:0.8;
+			font-size:30px;
+			position:relative;
+			top:-519px;
+			left:390px
+		}
+		.move1{
+			width: 300px;
+			height: 100px;
+			position:absolute;
+			background-color:black;
+			opacity: 0.3;
+			left: 50%;
+			top: 350px;
+			animation: g 8s infinite;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 1.8s;
+		}
+		.move2{
+			width: 400px;
+			height: 120px;
+			position:absolute;
+			background-color:black;
+			opacity: 0.1;
+			left: 30%;
+			top: 250px;
+			animation: h 10s infinite;
+			animation-fill-mode:forwards;
+			animation-timing-function: ease;
+			animation-delay: 1.8s;
+		}
+		.line{
+			width:1000px;
+			height: 7px;
+			background-color:#221433;
+			opacity: 0.9;
+			position:relative;
+			top:-300px;
+			transform:rotate(100deg);
+			left: 200px;
+		}
+		.line1{
+			width:1200px;
+			height: 7px;
+			background-color:#221433;
+			opacity: 0.6;
+			position:relative;
+			top:-300px;
+			transform:rotate(100deg);
+			left: 300px;
+		}
+		.circle1{
+			position:relative;
+			width: 350px;
+			height: 350px;
+			z-index:3;
+			top:-400px;
+			left:0px;
+			opacity: 0.3;
+		}
+		.big1{
+			font-size: 130px;
+			opacity: 1;
+			position: absolute;
+			font-family: 'Lilita One', cursive;
+			color:#B4E7FF;
+			z-index:4;
+			text-align: right;
+			top: -80px;
+			left: 1100px;
+		}
+		.big2{
+			font-size: 230px;
+			opacity: 0.7;
+			position: absolute;
+			font-family: 'Lilita One', cursive;
+			color:#5555FF;
+			z-index:4;
+			text-align: right;
+			top: -40px;
+			left: 1200px;
+		}
+		.big3{
+			font-size: 130px;
+			opacity: 1;
+			position: absolute;
+			font-family: 'Lilita One', cursive;
+			color:#B4E7FF;
+			z-index:4;
+			text-align: right;
+			top: 320px;
+			left: 1250px;
+		}
+		button{
+			height:70px;
+			width:300px;
+			color:white;
+			background-color:#000000;
+			border-style:none;
+			font-family: 'VT323', monospace;
+			font-size:20px;
+			border-bottom: 0px solid #4CA9A6;
+    		padding: 0 0 4px;
+		}
+		button:hover{
+			background-color:white;
+			color:#333333;
+			font-size:33px;
+			width:400px;
+			cursor:pointer;
+			transition:0.2s ease;
+			border-bottom: 3px solid #4CA9A6;
+		}
+		#padded{
+			padding: 130px;
+		}
+
+		
+		@keyframes a {
+		    0% {top:-110px;opacity: 0;}
+	    	60% {top: 150px;opacity: 1;}
+	    	100% {top: 1080px;opacity:0;}
+		}
+		@keyframes b {
+		    from {background-color:#DDDDDD;}
+	    	to {background-color:#FFFFFF;}
+	    }
+	    @keyframes c {
+		    from {width:0px;}
+	    	to {width:1918px;}
+	    }
+	    @keyframes d {
+	    	from {left:-30px;}
+	    	to {left:30px;}
+	    }
+	    @keyframes e {
+	    	0% {left:-2000px; box-shadow: 0px 0px 0px #888888;}
+	    	50% {left:0px; box-shadow: 0px 0px 0px #888888;}
+	    	100% {left:0px; box-shadow: 0px 0px 0px #888888;}
+	    }
+	    @keyframes f {
+	    	from {opacity:0; right:-2000px;}
+	    	to {opacity:1.00; right:-20px;}
+	    }
+	    @keyframes g {
+	    	0% {left: 50%;}
+	    	50% {left: 40%;}
+	    	90% {left: 60%}
+	    	100% {left: 50%;}
+	    }
+	    @keyframes h {
+	    	0% {left: 30%}
+	    	30% {left: 40%}
+	    	80% {left: 25%}
+	    	100% {left: 30%}
+	    }
+
+	</style>
+
+</head>
+<body>
+	<div class="noob">
+		<span>&lt;my name is actually flayy lol&gt;</span>
+	</div>
+	<img src="flz49nw.gif" class="image1">
+	<ul class="topbar" style="list-style-type: none;">
+		<li><button>HOME</button></li>
+		<li><button>ABOUT</button></li>
+		<li><button>CONTACT</button></li> 
+	</ul>
+	<div class="white">
+		<p class="name">Hey, I'm Parth.</p>
+		<div class="move1"></div>
+		<div class="move2"></div>
+		<div class="line1"></div>
+	</div>
+	<div class="white1">
+		<img src="09b24e31234507.564a1d23c07b4.gif" class="circle1">
+		<img src="flayy.jpg" class="flayy">
+		<img src="logo.png" class="speech">
+		<p class="hey">nice to meet you !</p>
+		<div class="line"></div>
+		<p class="big1">I DO</p>
+		<p class="big2">A LOT</p>
+		<p class="big3">OF STUFF</p>
+	</div>
+	<div class="black">
+		<p id="padded">Sorry; this page is still uresponsive and incomplete :3 (I'll try to do it asap; too much work is piled up rn..)</p>
+	</div>
+</body>
+	<hr class="hr1" align="right">
+	
+</body>
+</html>
